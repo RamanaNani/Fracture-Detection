@@ -1,4 +1,4 @@
-<center><h1>Bone Fracture Detection/h1></center>
+<center><h1>Bone Fracture Detection</h1></center>
 
 It is a multi class object detection task.
 
