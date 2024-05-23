@@ -6,6 +6,8 @@ It is a multi class object detection task.
 The main of the project is to develop a model for automated bone fracture detection.
 
 ## Dataset Description
+To know more about the dataset go through [Roboflow](https://universe.roboflow.com/veda/bone-fracture-detection-daoon/dataset/4)
+
 The dataset contains images categorized into different classes, each representing a specific type of bone fracture. These classes include
 * Elbow Positive
 * Fingers Positive
@@ -25,3 +27,6 @@ The data augmentation techniques we have performed are:
 
 ### Models
 We have trained the data using YOLOv4, Faster R-CNN and Detection transformers. We used Detection transformers because detection transformers excel in this bone fracture detection dataset due to their ability to capture complex spatial relationships and patterns within images, crucial for accurate detection of fractures. Their self-attention mechanism enables effective feature extraction across varying fracture types and anatomical regions, enhancing model performance. Additionally, detection transformers can efficiently handle the diverse classes and annotations present in the dataset, facilitating robust training and evaluation of fracture detection algorithms. Leveraging detection transformers accelerates the development of precise and scalable computer vision solutions for automated fracture detection, advancing medical diagnostics and enhancing patient care.
+
+### Conclusion
+By experimenting with these three models, Detection transformer is working well to classify the image type and create bounding boxes as compared to remaining two models. The main reason behind this is it’s attention mechanism and number of parameters. The number of epochs used to train the models are YOLOv4 (14000 epochs), Faster R-CNN (70 epochs) and for Detection Transformers(75 epochs). From the three models only Detection transformer is able to predict the Bone fracture class and creating bounding boxes.
